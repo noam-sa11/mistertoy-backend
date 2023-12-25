@@ -1,0 +1,66 @@
+[
+    {
+        "_id": "t101",
+        "name": "Talking Doll",
+        "price": 123,
+        "labels": [
+            "Doll",
+            "Battery Powered",
+            "Baby"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t102",
+        "name": "Car",
+        "price": 43,
+        "labels": [
+            "Car",
+            "Battery Powered",
+            "On wheels"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t103",
+        "name": "Puzzle",
+        "price": 59,
+        "labels": [
+            "Puzzle",
+            "Art",
+            "Box game"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t104",
+        "name": "Baby Doll",
+        "price": 39,
+        "labels": [
+            "Doll",
+            "Battery Powered",
+            "Baby"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t105",
+        "name": "Spiderman",
+        "price": 25,
+        "labels": [
+            "Doll"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t106",
+        "name": "Truck",
+        "price": 79,
+        "labels": [
+            "Outdoor",
+            "Battery Powered",
+            "On wheels"
+        ],
+        "inStock": true
+    }
+]

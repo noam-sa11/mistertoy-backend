@@ -45,10 +45,10 @@ function remove(toyId, loggedinUser) {
     const idx = toys.findIndex(toy => toy._id === toyId)
     if (idx === -1) return Promise.reject('No Such toy')
     const toy = toys[idx]
-    if (!loggedinUser.isAdmin &&
-        toy.owner._id !== loggedinUser._id) {
-        return Promise.reject('Not your toy')
-    }
+    // if (!loggedinUser.isAdmin &&
+    //     toy.owner._id !== loggedinUser._id) {
+    //     return Promise.reject('Not your toy')
+    // }
     toys.splice(idx, 1)
     return _savetoysToFile()
 }
@@ -56,22 +56,22 @@ function remove(toyId, loggedinUser) {
 function save(toy, loggedinUser) {
     if (toy._id) {
         const toyToUpdate = toys.find(currtoy => currtoy._id === toy._id)
-        if (!loggedinUser.isAdmin &&
-            toyToUpdate.owner._id !== loggedinUser._id) {
-            return Promise.reject('Not your toy')
-        }
+        // if (!loggedinUser.isAdmin &&
+        //     toyToUpdate.owner._id !== loggedinUser._id) {
+        //     return Promise.reject('Not your toy')
+        // }
         toyToUpdate.name = toy.name
         toyToUpdate.price = toy.price
         // toyToUpdate.labels = toy.labels
         toy = toyToUpdate
     } else {
         toy._id = utilService.makeId()
-        toy.owner = {
-            fullname: loggedinUser.fullname,
-            score: loggedinUser.score,
-            _id: loggedinUser._id,
-            isAdmin: loggedinUser.isAdmin
-        }
+        // toy.owner = {
+        //     fullname: loggedinUser.fullname,
+        //     score: loggedinUser.score,
+        //     _id: loggedinUser._id,
+        //     isAdmin: loggedinUser.isAdmin
+        // }
         toys.push(toy)
     }
 

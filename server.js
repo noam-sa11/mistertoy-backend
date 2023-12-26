@@ -70,7 +70,7 @@ app.post('/api/toy', (req, res) => {
         // labels: req.body.labels,
     }
 
-    toyService.save(toy)
+    // toyService.save(toy)
     toyService.save(toy, loggedinUser)
         .then((savedtoy) => {
             res.send(savedtoy)
@@ -92,7 +92,7 @@ app.put('/api/toy', (req, res) => {
         price: +req.body.price,
         // labels: req.body.labels,
     }
-    toyService.save(toy)
+    // toyService.save(toy)
     toyService.save(toy, loggedinUser)
         .then((savedtoy) => {
             res.send(savedtoy)
@@ -114,7 +114,7 @@ app.delete('/api/toy/:toyId', (req, res) => {
     }
 
     const { toyId } = req.params
-    toyService.remove(toyId)
+    // toyService.remove(toyId)
     toyService.remove(toyId, loggedinUser)
         .then(() => {
             loggerService.info(`toy ${toyId} removed`)

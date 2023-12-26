@@ -1,2 +1,23 @@
 25.12.2023, 21:15:01 - INFO - Server listening on port http://127.0.0.1:3030/
 25.12.2023, 21:18:23 - INFO - Server listening on port http://127.0.0.1:3030/
+26.12.2023, 15:02:35 - INFO - Server listening on port http://127.0.0.1:3030/
+26.12.2023, 15:11:44 - INFO - loggedinUser toy delete: | {"_id":"u101","fullname":"Nono Na","isAdmin":true}
+26.12.2023, 15:13:12 - INFO - loggedinUser toy delete: | null
+26.12.2023, 15:13:12 - INFO - Cannot remove toy, No user
+26.12.2023, 15:19:52 - INFO - loggedinUser toy delete: | null
+26.12.2023, 15:19:52 - INFO - Cannot remove toy, No user
+26.12.2023, 15:20:31 - INFO - loggedinUser toy delete: | {"_id":"u101","fullname":"Nono Na","isAdmin":true}
+26.12.2023, 15:25:24 - INFO - loggedinUser toy delete: | null
+26.12.2023, 15:25:24 - INFO - Cannot remove toy, No user
+26.12.2023, 15:28:24 - INFO - loggedinUser toy delete: | null
+26.12.2023, 15:28:24 - INFO - Cannot remove toy, No user
+26.12.2023, 15:30:56 - INFO - loggedinUser toy delete: | {"_id":"u101","fullname":"Nono Na","isAdmin":true}
+26.12.2023, 15:31:35 - INFO - Server listening on port http://127.0.0.1:3030/
+26.12.2023, 15:31:44 - INFO - loggedinUser toy delete: | {"_id":"u101","fullname":"Nono Na","isAdmin":true}
+26.12.2023, 15:31:44 - INFO - toy t101 removed
+26.12.2023, 15:33:41 - INFO - loggedinUser toy delete: | null
+26.12.2023, 15:33:41 - INFO - Cannot remove toy, No user
+26.12.2023, 15:35:24 - INFO - loggedinUser toy delete: | {"_id":"u101","fullname":"Nono Na","isAdmin":true}
+26.12.2023, 15:35:24 - INFO - toy t106 removed
+26.12.2023, 15:35:40 - INFO - loggedinUser toy delete: | {"_id":"u101","fullname":"Nono Na","isAdmin":true}
+26.12.2023, 15:35:40 - INFO - toy t105 removed

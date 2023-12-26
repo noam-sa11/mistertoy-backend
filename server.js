@@ -67,7 +67,9 @@ app.post('/api/toy', (req, res) => {
     const toy = {
         name: req.body.name,
         price: +req.body.price,
-        // labels: req.body.labels,
+        labels: req.body.labels,
+        inStock: req.body.inStock,
+        createdAt: req.body.createdAt,
     }
 
     toyService.save(toy)

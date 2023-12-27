@@ -29,6 +29,7 @@ app.use(express.json())
 
 // toy LIST
 app.get('/api/toy', (req, res) => {
+    // console.log('req:', req.query)
     const filterBy = {
         name: req.query.name || '',
         maxPrice: +req.query.maxPrice || Infinity,
@@ -36,7 +37,7 @@ app.get('/api/toy', (req, res) => {
         labels: req.query.labels || [],
         sortBy: req.query.sortBy || 'name',
     }
-
+    console.log('filterBy:', filterBy)
     toyService.query(filterBy)
         .then((toys) => {
             res.send(toys)

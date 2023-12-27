@@ -27,7 +27,7 @@ function query(filterBy) {
     }
     if (filterBy.labels.length > 0) {
         toysToReturn = toysToReturn.filter(toy => {
-            return filterBy.labels.some(label => toy.labels.includes(label.value))
+            return filterBy.labels.some(label => toy.labels.includes(label))
         })
     }
 

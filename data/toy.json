@@ -62,5 +62,193 @@
             "On wheels"
         ],
         "inStock": true
+    },
+    {
+        "_id": "t107",
+        "name": "Art Easel",
+        "price": 89,
+        "labels": [
+            "Art",
+            "Outdoor"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t108",
+        "name": "Remote Car",
+        "price": 59,
+        "labels": [
+            "Car",
+            "Remote Control",
+            "On wheels"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t109",
+        "name": "Wooden Puzzle",
+        "price": 35,
+        "labels": [
+            "Puzzle",
+            "Box game"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t110",
+        "name": "Soft Teddy Bear",
+        "price": 19,
+        "labels": [
+            "Baby",
+            "Stuffed Animal"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t111",
+        "name": "Superhero Figure",
+        "price": 29,
+        "labels": [
+            "Action Figure",
+            "Superhero"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t112",
+        "name": "RC Quadcopter",
+        "price": 149,
+        "labels": [
+            "Outdoor",
+            "Battery Powered"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t113",
+        "name": "Colorful Crayons",
+        "price": 15,
+        "labels": [
+            "Art",
+            "Drawing"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t114",
+        "name": "Blocks",
+        "price": 49,
+        "labels": [
+            "Building"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t115",
+        "name": "Musical Keyboard",
+        "price": 69,
+        "labels": [
+            "Musical",
+            "Battery Powered"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t116",
+        "name": "Helicopter",
+        "price": 79,
+        "labels": [
+            "Remote Control",
+            "Outdoor",
+            "Battery Powered"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t117",
+        "name": "Cooking Playset",
+        "price": 29,
+        "labels": [
+            "Kitchen"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t118",
+        "name": "Learning Tablet",
+        "price": 39,
+        "labels": [
+            "Battery Powered"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t119",
+        "name": "Puzzle Set",
+        "price": 25,
+        "labels": [
+            "Puzzle",
+            "Building",
+            "Box game"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t120",
+        "name": "Dinosaur Set",
+        "price": 19,
+        "labels": [
+            "Dinosaur",
+            "Action Figure"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t121",
+        "name": "Flashcards",
+        "price": 12,
+        "labels": [
+            "Flashcards"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t122",
+        "name": "Building Train",
+        "price": 55,
+        "labels": [
+            "Building",
+            "Train"
+        ],
+        "inStock": false
+    },
+    {
+        "_id": "t123",
+        "name": "Stuffed Rabbit",
+        "price": 18,
+        "labels": [
+            "Stuffed Animal"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t124",
+        "name": "Space Playset",
+        "price": 34,
+        "labels": [
+            "Space",
+            "Role Play"
+        ],
+        "inStock": true
+    },
+    {
+        "_id": "t125",
+        "name": "Craft Kit",
+        "price": 28,
+        "labels": [
+            "DIY",
+            "Craft"
+        ],
+        "inStock": false
     }
 ]

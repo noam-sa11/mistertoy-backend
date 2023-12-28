@@ -11,17 +11,6 @@
         "inStock": true
     },
     {
-        "_id": "t102",
-        "name": "Car",
-        "price": 43,
-        "labels": [
-            "Car",
-            "Battery Powered",
-            "On wheels"
-        ],
-        "inStock": false
-    },
-    {
         "_id": "t103",
         "name": "Puzzle",
         "price": 59,
@@ -125,25 +114,6 @@
         "inStock": true
     },
     {
-        "_id": "t113",
-        "name": "Colorful Crayons",
-        "price": 15,
-        "labels": [
-            "Art",
-            "Drawing"
-        ],
-        "inStock": true
-    },
-    {
-        "_id": "t114",
-        "name": "Blocks",
-        "price": 49,
-        "labels": [
-            "Building"
-        ],
-        "inStock": true
-    },
-    {
         "_id": "t115",
         "name": "Musical Keyboard",
         "price": 69,
@@ -163,15 +133,6 @@
             "Battery Powered"
         ],
         "inStock": false
-    },
-    {
-        "_id": "t117",
-        "name": "Cooking Playset",
-        "price": 29,
-        "labels": [
-            "Kitchen"
-        ],
-        "inStock": true
     },
     {
         "_id": "t118",
@@ -211,16 +172,6 @@
             "Flashcards"
         ],
         "inStock": true
-    },
-    {
-        "_id": "t122",
-        "name": "Building Train",
-        "price": 55,
-        "labels": [
-            "Building",
-            "Train"
-        ],
-        "inStock": false
     },
     {
         "_id": "t123",

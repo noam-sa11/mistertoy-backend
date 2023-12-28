@@ -11,10 +11,14 @@ export const utilService = {
   getSortedItems
 }
 
-function readJsonFile(path) {
-  const str = fs.readFileSync(path, 'utf8')
-  const json = JSON.parse(str)
-  return json
+async function readJsonFile(path) {
+  try {
+    const str = await fs.readFile(path, 'utf8');
+    const json = JSON.parse(str);
+    return json;
+  } catch (error) {
+    throw new Error(`Error reading JSON file at ${path}: ${error.message}`);
+  }
 }
 
 function download(url, fileName) {

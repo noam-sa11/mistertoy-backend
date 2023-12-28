@@ -75,19 +75,32 @@ function save(toy, loggedinUser) {
         toys.push(toy)
     }
 
-    return _savetoysToFile().then(() => toy)
+    try {
+        _savetoysToFile()
+        return toy
+    } catch (err) {
+        throw new Error(`Error saving user: ${error.message}`)
+    }
 }
-
 
 function _savetoysToFile() {
-    return new Promise((resolve, reject) => {
+    try {
         const data = JSON.stringify(toys, null, 4)
-        fs.writeFile('data/toy.json', data, (err) => {
-            if (err) {
-                loggerService.error('Cannot write to toys file', err)
-                return reject(err)
-            }
-            resolve()
-        })
-    })
+        fs.writeFile('data/toy.json', data)
+    } catch (err) {
+        loggerService.error('Cannot write to toys file', err)
+        throw new Error(`Cannot write to toys file: ${err.message}`)
+    }
 }
+// function _savetoysToFile() {
+//     return new Promise((resolve, reject) => {
+//         const data = JSON.stringify(toys, null, 4)
+//         fs.writeFile('data/toy.json', data, (err) => {
+//             if (err) {
+//                 loggerService.error('Cannot write to toys file', err)
+//                 return reject(err)
+//             }
+//             resolve()
+//         })
+//     })
+// }

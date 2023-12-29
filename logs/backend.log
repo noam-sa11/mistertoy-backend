@@ -500,3 +500,37 @@
 29.12.2023, 21:56:52 - INFO - Req was made | /
 29.12.2023, 21:58:35 - INFO - Req was made | /
 29.12.2023, 21:58:35 - INFO - Req was made | /
+29.12.2023, 22:00:02 - INFO - Req was made | /
+29.12.2023, 22:00:02 - INFO - Req was made | /
+29.12.2023, 22:00:03 - INFO - Req was made | /
+29.12.2023, 22:00:03 - INFO - Req was made | /
+29.12.2023, 22:00:08 - INFO - Req was made | /
+29.12.2023, 22:00:10 - INFO - Req was made | /
+29.12.2023, 22:00:10 - INFO - Req was made | /
+29.12.2023, 22:43:01 - INFO - Server is running on port: 3030
+29.12.2023, 22:45:34 - INFO - Server is running on port: 3030
+29.12.2023, 22:46:21 - DEBUG - auth.service - login with username: nono
+29.12.2023, 22:46:21 - INFO - User login:  | {"_id":"658f165089d913a7dbfdc453","username":"nono","fullname":"nono","isAdmin":true}
+29.12.2023, 22:46:21 - INFO - Req was made | /
+29.12.2023, 22:46:21 - INFO - Req was made | /
+29.12.2023, 22:46:26 - INFO - Req was made | /
+29.12.2023, 22:46:26 - INFO - Req was made | /
+29.12.2023, 22:46:30 - INFO - Req was made | /
+29.12.2023, 22:46:30 - INFO - Req was made | /
+29.12.2023, 22:46:38 - INFO - Req was made | /
+29.12.2023, 22:46:38 - INFO - Req was made | /
+29.12.2023, 22:46:40 - INFO - Req was made | /
+29.12.2023, 22:46:40 - INFO - Req was made | /
+29.12.2023, 22:47:22 - INFO - Server is running on port: 3030
+29.12.2023, 22:47:25 - INFO - Req was made | /
+29.12.2023, 22:47:25 - INFO - Req was made | /
+29.12.2023, 22:47:32 - INFO - Req was made | /
+29.12.2023, 22:47:32 - INFO - Req was made | /
+29.12.2023, 22:48:00 - INFO - Server is running on port: 3030
+29.12.2023, 22:48:01 - INFO - Req was made | /
+29.12.2023, 22:48:01 - INFO - Req was made | /
+29.12.2023, 22:50:13 - INFO - Server is running on port: 3030
+29.12.2023, 22:51:35 - INFO - Server is running on port: 3030
+29.12.2023, 22:53:53 - INFO - Server is running on port: 3030
+29.12.2023, 22:54:30 - INFO - Server is running on port: 3030
+29.12.2023, 23:13:09 - INFO - Server is running on port: 3030

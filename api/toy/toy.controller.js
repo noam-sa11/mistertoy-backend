@@ -33,7 +33,6 @@ export async function getToyById(req, res) {
 
 export async function addToy(req, res) {
     const { loggedinUser } = req
-
     try {
         const toy = req.body
         toy.owner = loggedinUser
@@ -72,8 +71,11 @@ export async function addToyMsg(req, res) {
     try {
         const toyId = req.params.id
         const msg = {
-            name: req.body.name,
-            by: loggedinUser,
+            txt: req.body.txt,
+            by: {
+                _id: loggedinUser._id,
+                fullname: loggedinUser.fullname,
+            },
         }
         const savedMsg = await toyService.addToyMsg(toyId, msg)
         res.json(savedMsg)

@@ -17,13 +17,10 @@ async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
     try {
         const collection = await dbService.getCollection('user')
-        var users = await collection.find(criteria).sort({ nickname: -1 }).toArray()
+        var users = await collection.find(criteria).sort({ fullname: -1 }).toArray()
         users = users.map(user => {
             delete user.password
-            user.isHappy = true
-            user.createdAt = ObjectId(user._id).getTimestamp()
-            // Returning fake fresh data
-            // user.createdAt = Date.now() - (1000 * 60 * 60 * 24 * 3) // 3 days ago
+            user.createdAt = (user._id).getTimestamp()
             return user
         })
         return users
@@ -72,7 +69,7 @@ async function update(user) {
             _id: ObjectId(user._id),
             username: user.username,
             fullname: user.fullname,
-            score: user.score
+            isAdmin: user.isAdmin
         }
         const collection = await dbService.getCollection('user')
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
@@ -94,8 +91,9 @@ async function add(user) {
             username: user.username,
             password: user.password,
             fullname: user.fullname,
-            score: user.score || 0
+            isAdmin: user.isAdmin || false,
         }
+
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
         return userToAdd
@@ -110,16 +108,11 @@ function _buildCriteria(filterBy) {
     if (filterBy.txt) {
         const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
         criteria.$or = [
-            {
-                username: txtCriteria
-            },
-            {
-                fullname: txtCriteria
-            }
+            { username: txtCriteria },
+            { fullname: txtCriteria },
+            { isAdmin: txtCriteria }
         ]
     }
-    if (filterBy.minBalance) {
-        criteria.balance = { $gte: filterBy.minBalance }
-    }
+
     return criteria
 }

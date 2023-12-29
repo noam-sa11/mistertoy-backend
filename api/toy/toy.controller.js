@@ -2,7 +2,6 @@ import { loggerService } from '../../services/logger.service.js'
 import { toyService } from './toy.service.js'
 
 export async function getToys(req, res) {
-    console.log('req.query:', req.query)
     try {
         const filterBy = {
             name: req.query.name || '',
@@ -12,7 +11,7 @@ export async function getToys(req, res) {
             sortBy: req.query.sortBy || 'name',
         }
 
-        loggerService.debug('Getting toys', filterBy)
+        // loggerService.debug('Getting toys', filterBy)
         const toys = await toyService.query(filterBy)
         res.json(toys)
     } catch (err) {

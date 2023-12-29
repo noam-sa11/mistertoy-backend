@@ -14,8 +14,8 @@ export async function getUser(req, res) {
 export async function getUsers(req, res) {
     try {
         const filterBy = {
-            name: req.query?.name || '',
-            minBalance: +req.query?.minBalance || 0
+            username: req.query?.name || '',
+            isAdmin: +req.query?.isAdmin || ''
         }
         const users = await userService.query(filterBy)
         res.send(users)

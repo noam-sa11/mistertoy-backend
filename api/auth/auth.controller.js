@@ -3,8 +3,10 @@ import { loggerService } from '../../services/logger.service.js'
 
 export async function login(req, res) {
     const { username, password } = req.body
+    console.log('req.body:', req.body)
     try {
         const user = await authService.login(username, password)
+        console.log('user controller:', user)
         const loginToken = authService.getLoginToken(user)
 
         loggerService.info('User login: ', user)

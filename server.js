@@ -3,8 +3,6 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import path from 'path'
 
-// import { toyService } from './services/toy.service.js'
-// import { userService } from './services/user.service.js'
 import { loggerService } from './services/logger.service.js'
 
 const app = express()
@@ -24,8 +22,8 @@ app.use(express.static('public'))
 app.use(cookieParser())
 app.use(express.json())
 
-// routes
 
+// routes
 import { authRoutes } from './api/auth/auth.routes.js'
 app.use('/api/auth', authRoutes)
 
@@ -34,6 +32,9 @@ app.use('/api/user', userRoutes)
 
 import { toyRoutes } from './api/toy/toy.routes.js'
 app.use('/api/toy', toyRoutes)
+
+// import { reviewRouts } from './api/review/review.routes.js'
+// app.use('/api/review', reviewRoutes)
 
 
 app.get('/**', (req, res) => {

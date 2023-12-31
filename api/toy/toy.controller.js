@@ -98,3 +98,36 @@ export async function removeToyMsg(req, res) {
         res.status(500).send({ err: 'Failed to remove toy msg' })
     }
 }
+
+export async function addToyReview(req, res) {
+    const { loggedinUser } = req
+    try {
+        const toyId = req.params.id
+        const review = {
+            txt: req.body.txt,
+            by: {
+                _id: loggedinUser._id,
+                fullname: loggedinUser.fullname,
+            },
+        }
+        const savedReview = await toyService.addToyReview(toyId, review)
+        res.json(savedReview)
+    } catch (err) {
+        loggerService.error('Failed to update toy', err)
+        res.status(500).send({ err: 'Failed to update toy' })
+    }
+}
+
+export async function removeToyReview(req, res) {
+    // const { loggedinUser } = req
+    try {
+        const toyId = req.params.id
+        const { reviewId } = req.params
+
+        const removedId = await toyService.removeToyReview(toyId, reviewId)
+        res.send(removedId)
+    } catch (err) {
+        loggerService.error('Failed to remove toy review', err)
+        res.status(500).send({ err: 'Failed to remove toy review' })
+    }
+}

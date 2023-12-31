@@ -11,7 +11,9 @@ export const toyService = {
     add,
     update,
     addToyMsg,
-    removeToyMsg
+    removeToyMsg,
+    addToyReview,
+    removeToyReview
 }
 
 async function query(filterBy = {}) {
@@ -117,6 +119,29 @@ async function removeToyMsg(toyId, msgId) {
         return msgId
     } catch (err) {
         loggerService.error(`cannot add toy msg ${toyId}`, err)
+        throw err
+    }
+}
+
+async function addToyReview(toyId, review) {
+    try {
+        review.id = utilService.makeId()
+        const collection = await dbService.getCollection('toy')
+        await collection.updateOne({ _id: new ObjectId(toyId) }, { $push: { reviews: review } })
+        return review
+    } catch (err) {
+        loggerService.error(`cannot add toy review ${toyId}`, err)
+        throw err
+    }
+}
+
+async function removeToyReview(toyId, reviewId) {
+    try {
+        const collection = await dbService.getCollection('toy')
+        await collection.updateOne({ _id: new ObjectId(toyId) }, { $pull: { reviews: { id: reviewId } } })
+        return reviewId
+    } catch (err) {
+        loggerService.error(`cannot add toy review ${toyId}`, err)
         throw err
     }
 }

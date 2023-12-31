@@ -1017,3 +1017,21 @@
 30.12.2023, 21:51:02 - INFO - Req was made | /
 30.12.2023, 21:51:02 - INFO - Req was made | /
 30.12.2023, 21:51:03 - INFO - Req was made | /
+31.12.2023, 9:13:53 - INFO - Server is running on port: 3030
+31.12.2023, 9:13:57 - INFO - Req was made | /
+31.12.2023, 9:13:57 - INFO - Req was made | /
+31.12.2023, 9:13:57 - INFO - Req was made | /
+31.12.2023, 9:15:39 - INFO - Req was made | /
+31.12.2023, 9:15:39 - INFO - Req was made | /
+31.12.2023, 9:15:39 - INFO - Req was made | /
+31.12.2023, 9:15:45 - DEBUG - auth.service - login with username: nono
+31.12.2023, 9:15:45 - INFO - User login:  | {"_id":"658f165089d913a7dbfdc453","username":"nono","fullname":"nono","isAdmin":true}
+31.12.2023, 9:15:45 - INFO - Req was made | /
+31.12.2023, 9:15:45 - INFO - Req was made | /
+31.12.2023, 9:15:45 - INFO - Req was made | /
+31.12.2023, 9:15:48 - INFO - Req was made | /
+31.12.2023, 9:15:48 - INFO - Req was made | /
+31.12.2023, 9:15:48 - INFO - Req was made | /
+31.12.2023, 9:25:47 - INFO - Req was made | /
+31.12.2023, 9:25:47 - INFO - Req was made | /
+31.12.2023, 9:25:47 - INFO - Req was made | /
